@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">必应每日美图</string>
+    <string name="title_auto_set">自动设置壁纸</string>
+    <string name="title_hour">自定义时间</string>
+    <string name="summary_hour">在你设定的时间内下载自动下载壁纸</string>
+    <string name="title_save_picture">保存壁纸</string>
+    <string name="title_only_wifi">只在使用Wi-Fi网络</string>
+    <string name="title_settings">设置</string>
+    <string name="title_others">其他</string>
+    <string name="title_about">关于</string>
+    <string name="menu_settings">设置</string>
+    <string name="summary_wifi">当手机连接到Wi-Fi网络时才下载壁纸</string>
+    <string name="summary_save_picture">设置壁纸的同时保存该壁纸到手机</string>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DailyBing</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_auto_set">Set Wallpaper automatically</string>
+    <string name="title_hour">Custom hour</string>
+    <string name="summary_hour">The wallpaper will be automatically changed every day on your personal hour</string>
+    <string name="title_save_picture">Save the picture</string>
+    <string name="summary_save_picture">In addition to applying the wallpaper,the picture is saved to your phone</string>
+    <string name="title_only_wifi">Only Wi-Fi</string>
+    <string name="summary_wifi">Pictures will be downloaded only when device is connected to a Wi-Fi network</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_others">Others</string>
+    <string name="title_about">About</string>
+</resources>
