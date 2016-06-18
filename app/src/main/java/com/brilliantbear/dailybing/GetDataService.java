@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.util.Log;
 
 import com.brilliantbear.dailybing.bean.ResultBean;
 import com.brilliantbear.dailybing.net.Net;
@@ -30,15 +31,13 @@ public class GetDataService extends IntentService {
 
     @Override
     protected void onHandleIntent(Intent intent) {
-//        Log.d("TAG", TAG);
-
+        Log.d("TAG", TAG);
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
         boolean onlyWifi = sp.getBoolean("key_wifi", false);
-        if (onlyWifi) {
-            int networkType = NetUtils.getNetworkType(context);
-            if (networkType != NetUtils.NET_TYPE_WIFI) {
-                return;
-            }
+        int networkType = NetUtils.getNetworkType(context);
+        Log.d("TAG", "networkType:" + networkType);
+        if (onlyWifi && networkType != NetUtils.NET_TYPE_WIFI) {
+            return;
         }
 
         Net.getInstance().getData(0, 1, new Callback<ResponseBody>() {

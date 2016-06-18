@@ -1,7 +1,6 @@
 package com.brilliantbear.dailybing;
 
 import android.app.AlarmManager;
-import android.app.AlertDialog;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
@@ -17,7 +16,7 @@ import java.util.Calendar;
 public class SettingsFragment extends PreferenceFragment {
 
     private static final int INTERVAL = 1000 * 60 * 60 * 24;// 24h
-    //    private static final int INTERVAL = 1000 * 60;// 1minute
+    //        private static final int INTERVAL = 1000 * 60;// 1minute
     private static final int REQUEST_CODE = 1;
     private Context context;
 
